@@ -1,0 +1,262 @@
+[
+  {
+    "title": "Data Scientist",
+    "description": "Uses statistics, programming, and machine learning to uncover insights from data and build predictive models.",
+    "skills": [
+      "Python",
+      "Statistics",
+      "Machine Learning",
+      "SQL"
+    ],
+    "averageSalary": "$110,000",
+    "category": "Data Careers",
+    "confusedWith": [
+      "Data Analyst",
+      "Machine Learning Engineer"
+    ],
+    "resources": [
+      {
+        "label": "IBM Data Science (Coursera)",
+        "url": "https://www.coursera.org/professional-certificates/ibm-data-science"
+      },
+      {
+        "label": "Kaggle Learn",
+        "url": "https://www.kaggle.com/learn"
+      }
+    ]
+  },
+  {
+    "title": "Data Analyst",
+    "description": "Analyzes structured data to extract meaningful insights and inform business decisions.",
+    "skills": [
+      "Excel",
+      "SQL",
+      "Data Visualization",
+      "Python"
+    ],
+    "averageSalary": "$75,000",
+    "category": "Data Careers",
+    "confusedWith": [
+      "Data Scientist",
+      "Business Analyst"
+    ],
+    "resources": [
+      {
+        "label": "Google Data Analytics (Coursera)",
+        "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      },
+      {
+        "label": "DataCamp",
+        "url": "https://www.datacamp.com/"
+      }
+    ]
+  },
+  {
+    "title": "Data Engineer",
+    "description": "Designs and maintains data infrastructure and pipelines that support data processing and analytics.",
+    "skills": [
+      "SQL",
+      "Python",
+      "ETL",
+      "Cloud Platforms"
+    ],
+    "averageSalary": "$105,000",
+    "category": "Data Careers",
+    "confusedWith": [
+      "Data Scientist",
+      "Backend Developer"
+    ],
+    "resources": [
+      {
+        "label": "Data Engineering Zoomcamp",
+        "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp"
+      },
+      {
+        "label": "AWS Big Data",
+        "url": "https://aws.amazon.com/training/learning-paths/big-data/"
+      }
+    ]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "description": "Builds and deploys machine learning models in production environments.",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Cloud ML tools"
+    ],
+    "averageSalary": "$120,000",
+    "category": "Data Careers",
+    "confusedWith": [
+      "Data Scientist",
+      "AI Engineer"
+    ],
+    "resources": [
+      {
+        "label": "DeepLearning.AI TensorFlow",
+        "url": "https://www.coursera.org/professional-certificates/tensorflow-in-practice"
+      },
+      {
+        "label": "fast.ai",
+        "url": "https://course.fast.ai/"
+      }
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "description": "Builds and maintains software systems for applications, websites, or internal tools.",
+    "skills": [
+      "JavaScript",
+      "Python",
+      "Git",
+      "APIs"
+    ],
+    "averageSalary": "$100,000",
+    "category": "Software Engineering",
+    "confusedWith": [
+      "Backend Developer",
+      "Web Developer"
+    ],
+    "resources": [
+      {
+        "label": "CS50 (Harvard)",
+        "url": "https://cs50.harvard.edu/x/"
+      },
+      {
+        "label": "The Odin Project",
+        "url": "https://www.theodinproject.com/"
+      }
+    ]
+  },
+  {
+    "title": "Backend Developer",
+    "description": "Focuses on the server-side logic, databases, and APIs of software systems.",
+    "skills": [
+      "Node.js",
+      "SQL",
+      "REST APIs",
+      "Authentication"
+    ],
+    "averageSalary": "$95,000",
+    "category": "Software Engineering",
+    "confusedWith": [
+      "DevOps Engineer",
+      "Data Engineer"
+    ],
+    "resources": [
+      {
+        "label": "Backend Roadmap",
+        "url": "https://roadmap.sh/backend"
+      },
+      {
+        "label": "Node.js Docs",
+        "url": "https://nodejs.org/en/docs/"
+      }
+    ]
+  },
+  {
+    "title": "DevOps Engineer",
+    "description": "Manages deployment pipelines, infrastructure, and automation for software teams.",
+    "skills": [
+      "Docker",
+      "CI/CD",
+      "Linux",
+      "Cloud Platforms"
+    ],
+    "averageSalary": "$110,000",
+    "category": "Software Engineering",
+    "confusedWith": [
+      "Backend Developer",
+      "Cloud Engineer"
+    ],
+    "resources": [
+      {
+        "label": "FreeCodeCamp DevOps Guide",
+        "url": "https://www.freecodecamp.org/news/devops-beginners-guide/"
+      },
+      {
+        "label": "Linux Foundation DevOps",
+        "url": "https://training.linuxfoundation.org/training/devops-fundamentals/"
+      }
+    ]
+  },
+  {
+    "title": "Frontend Developer",
+    "description": "Creates user interfaces and experiences using web technologies.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
+    "averageSalary": "$90,000",
+    "category": "Software Engineering",
+    "confusedWith": [
+      "UX Designer",
+      "Web Developer"
+    ],
+    "resources": [
+      {
+        "label": "Frontend Mentor",
+        "url": "https://www.frontendmentor.io/"
+      },
+      {
+        "label": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn"
+      }
+    ]
+  },
+  {
+    "title": "UX Designer",
+    "description": "Designs intuitive user experiences by researching, testing, and prototyping interfaces.",
+    "skills": [
+      "Wireframing",
+      "Figma",
+      "User Research",
+      "Usability Testing"
+    ],
+    "averageSalary": "$85,000",
+    "category": "Design & UX",
+    "confusedWith": [
+      "UI Designer",
+      "Product Designer"
+    ],
+    "resources": [
+      {
+        "label": "Google UX Design (Coursera)",
+        "url": "https://www.coursera.org/professional-certificates/google-ux-design"
+      },
+      {
+        "label": "NNGroup UX Basics",
+        "url": "https://www.nngroup.com/articles/definition-user-experience/"
+      }
+    ]
+  },
+  {
+    "title": "UI Designer",
+    "description": "Focuses on the visual elements and style of user interfaces.",
+    "skills": [
+      "Typography",
+      "Color Theory",
+      "Figma",
+      "Design Systems"
+    ],
+    "averageSalary": "$80,000",
+    "category": "Design & UX",
+    "confusedWith": [
+      "UX Designer",
+      "Graphic Designer"
+    ],
+    "resources": [
+      {
+        "label": "Designlab UI Design",
+        "url": "https://designlab.com/courses/ui-design"
+      },
+      {
+        "label": "Figma Learn",
+        "url": "https://www.figma.com/learn/"
+      }
+    ]
+  }
+]
