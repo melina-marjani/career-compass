@@ -1,0 +1,14 @@
+/* Blurred full-page background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 300px; /* leave space for sidebar */
+  width: calc(100% - 300px);
+  height: 100%;
+  background-image: url('https://www.cato.org/sites/cato.org/files/styles/optimized/public/2021-01/GettyImages-1226985345.jpg?itok=f9SULHjG');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.8;
+}

@@ -4,18 +4,20 @@ function Layout() {
   return (
     <div style={{ display: 'flex' }}>
       {/* Sidebar */}
-      <nav
-        style={{
-          backgroundColor: '#f44336', // red
-          width: '300px',
-          padding: '1rem',
-          height: '100vh',
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          color: 'white',
-          fontWeight: 'bold',
-        }}
+<nav
+  style={{
+    backgroundColor: '#f44336',
+    width: '300px',
+    padding: '1rem',
+    height: '100vh',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    color: 'white',
+    fontWeight: 'bold',
+    zIndex: 2, // <-- this line matters
+  }}
+
       >
         <div style={{ marginBottom: '2rem' }}>
           <h2 style={{ margin: 0 }}>Career<br />Compass</h2>
@@ -37,7 +39,7 @@ function Layout() {
 }
 
 const linkStyle = {
-  color: 'white',
+  color: 'black',
   textDecoration: 'none',
   fontSize: '1.1rem',
   padding: '0.5rem',
