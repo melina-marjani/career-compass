@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import axios from 'axios';
 
+const orange = '#FF6E00';
+
 function Quiz() {
-  const [answers, setAnswers] = useState({ q1: '', q2: '' });
+  const [answers, setAnswers] = useState({ q1: '', q2: '', q3: '', q4: '' });
   const [careers, setCareers] = useState([]);
 
   const handleChange = (e) => {
@@ -24,7 +26,7 @@ function Quiz() {
   return (
     <div style={wrapperStyle}>
       <div style={{ ...questionBox, marginBottom: '1.5rem' }}>
-        <h1 style={{ color: '#f44336', margin: 0 }}>Tech Career Quiz</h1>
+        <h1 style={{ color: orange, margin: 0 }}>Tech Career Quiz</h1>
       </div>
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -54,28 +56,28 @@ function Quiz() {
           </label>
         </div>
 
-                {/* Question 2 */}
+        {/* Question 3 */}
         <div style={questionBox}>
           <label>
             <strong>Do you prefer managing projects or producing them?</strong>
             <br />
-            <select name="q3" value={answers.q2} onChange={handleChange} required style={selectStyle}>
+            <select name="q3" value={answers.q3} onChange={handleChange} required style={selectStyle}>
               <option value="">--Select--</option>
-              <option value="build">Managing</option>
-              <option value="analyze">Producing</option>
+              <option value="managing">Managing</option>
+              <option value="producing">Producing</option>
             </select>
           </label>
         </div>
 
-                {/* Question 2 */}
+        {/* Question 4 */}
         <div style={questionBox}>
           <label>
             <strong>Do you prefer changing technologies or somewhat constant tools?</strong>
             <br />
-            <select name="q4" value={answers.q2} onChange={handleChange} required style={selectStyle}>
+            <select name="q4" value={answers.q4} onChange={handleChange} required style={selectStyle}>
               <option value="">--Select--</option>
-              <option value="build">Changing</option>
-              <option value="analyze">Constant</option>
+              <option value="changing">Changing</option>
+              <option value="constant">Constant</option>
             </select>
           </label>
         </div>
@@ -83,13 +85,16 @@ function Quiz() {
         <button type="submit" style={buttonStyle}>See Careers</button>
       </form>
 
-      {careers.length > 0 && (
-        <div style={{ marginTop: '2rem' }}>
-          <h2>Suggested Careers</h2>
-          <ul>
+            {careers.length > 0 && (
+              <div style={resultsContainer}>
+                <div style={{ ...questionBox, marginBottom: '1.5rem' }}>
+                  <h2 style={{ margin: 0 }}>Suggested Careers</h2>
+                </div>
+                <div style={careerGrid}>
+
             {careers.map((career, i) => (
-              <li key={i}>
-                <h3>{career.title}</h3>
+              <div key={i} style={careerBox}>
+                <h3 style={{ marginTop: 0 }}>{career.title}</h3>
                 <p>{career.description}</p>
                 <p><strong>Skills:</strong> {career.skills.join(', ')}</p>
                 <p><strong>Average Salary:</strong> {career.averageSalary}</p>
@@ -100,9 +105,9 @@ function Quiz() {
                     </li>
                   ))}
                 </ul>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </div>
@@ -133,13 +138,30 @@ const selectStyle = {
 
 const buttonStyle = {
   marginTop: '1rem',
-  backgroundColor: '#f44336',
+  backgroundColor: orange,
   color: 'white',
   border: 'none',
   padding: '0.8rem 1.5rem',
   fontSize: '1rem',
   borderRadius: '5px',
   cursor: 'pointer',
+};
+
+const resultsContainer = {
+  marginTop: '2rem',
+};
+
+const careerGrid = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1.5rem',
+};
+
+const careerBox = {
+  backgroundColor: 'rgba(255, 255, 255, 0.95)',
+  padding: '1.5rem',
+  borderRadius: '10px',
+  boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
 };
 
 export default Quiz;

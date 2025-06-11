@@ -5,14 +5,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const quizRoutes = require('./routes/quiz');
-app.use('/api/quiz', quizRoutes);
-
 app.get('/', (req, res) => {
   res.send('CareerCompass backend is running!');
 });
 
-const PORT = 5050;
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+// Use quiz routes
+const quizRoutes = require('./routes/quiz');
+app.use('/api', quizRoutes);
+
+app.listen(5050, () => {
+  console.log('CareerCompass backend is running on port 5050');
 });

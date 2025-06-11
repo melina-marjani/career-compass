@@ -6,7 +6,7 @@ function Layout() {
       {/* Sidebar */}
 <nav
   style={{
-    backgroundColor: '#f44336',
+    backgroundColor: '#FFFF81',
     width: '300px',
     padding: '1rem',
     height: '100vh',
@@ -20,7 +20,7 @@ function Layout() {
 
       >
         <div style={{ marginBottom: '2rem' }}>
-          <h2 style={{ margin: 0 }}>Career<br />Compass</h2>
+          <h2 style={{ margin: 0, color: '#FF6E00' }}>Career<br />Compass</h2>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <Link to="/" style={linkStyle}>Home</Link>
@@ -44,7 +44,7 @@ const linkStyle = {
   fontSize: '1.1rem',
   padding: '0.5rem',
   borderRadius: '4px',
-  backgroundColor: '#d32f2f',
+  backgroundColor: '#FFC067',
   transition: 'background 0.3s',
 };
 

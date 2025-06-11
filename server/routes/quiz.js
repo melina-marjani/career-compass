@@ -1,48 +1,68 @@
 const express = require('express');
-const fs = require('fs');
-const path = require('path');
 const router = express.Router();
 
-// Path to the careers.json data file
-const careersPath = path.join(__dirname, '..', 'data', 'careers.json');
+const careers = [
+  {
+    title: 'Data Scientist',
+    traits: ['data', 'analyze', 'producing', 'changing'],
+    description: 'Analyzes large datasets to extract insights.',
+    skills: ['Python', 'Statistics', 'Machine Learning'],
+    averageSalary: '$120,000',
+    resources: [
+      { label: 'Intro to Data Science – Coursera', url: 'https://coursera.org/learn/intro-data-science' },
+    ],
+  },
+  {
+    title: 'Data Engineer',
+    traits: ['data', 'build', 'producing', 'changing'],
+    description: 'Builds data systems and ETL pipelines.',
+    skills: ['SQL', 'Spark', 'ETL', 'Cloud'],
+    averageSalary: '$115,000',
+    resources: [
+      { label: 'Data Engineering on GCP', url: 'https://coursera.org/learn/gcp-data-engineering' },
+    ],
+  },
+  {
+    title: 'Product Manager',
+    traits: ['no-data', 'analyze', 'managing', 'constant'],
+    description: 'Leads product strategy and coordinates teams.',
+    skills: ['Agile', 'Communication', 'Planning'],
+    averageSalary: '$110,000',
+    resources: [
+      { label: 'Google Product Management', url: 'https://coursera.org/learn/google-product-management' },
+    ],
+  },
+  {
+    title: 'Frontend Developer',
+    traits: ['no-data', 'build', 'producing', 'constant'],
+    description: 'Creates interactive user interfaces.',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    averageSalary: '$100,000',
+    resources: [
+      { label: 'Frontend Dev Path', url: 'https://freecodecamp.org' },
+    ],
+  },
+  // Add more here
+];
 
-// POST /api/quiz
-router.post('/', (req, res) => {
-  const { q1, q2 } = req.body.answers;
+router.post('/quiz', (req, res) => {
+  const { q1, q2, q3, q4 } = req.body.answers;
 
-  const rawData = fs.readFileSync(careersPath);
-  const careers = JSON.parse(rawData);
+  const traits = [
+    q1 === 'yes' ? 'data' : 'no-data',
+    q2,
+    q3,
+    q4,
+  ];
 
-  let filtered;
+  const scored = careers.map((career) => {
+    const score = career.traits.reduce((sum, trait) => sum + (traits.includes(trait) ? 1 : 0), 0);
+    return { ...career, score };
+  });
 
-  if (q1 === 'yes' && q2 === 'build') {
-    filtered = careers.filter(c =>
-      ['Data Engineer', 'Machine Learning Engineer'].includes(c.title)
-    );
-  } else if (q1 === 'yes' && q2 === 'analyze') {
-    filtered = careers.filter(c =>
-      ['Data Scientist', 'Data Analyst'].includes(c.title)
-    );
-  } else if (q1 === 'no' && q2 === 'build') {
-    filtered = careers.filter(c =>
-      ['Software Engineer', 'Backend Developer', 'DevOps Engineer'].includes(c.title)
-    );
-  } else if (q1 === 'no' && q2 === 'analyze') {
-    filtered = careers.filter(c =>
-      ['Frontend Developer', 'UX Designer'].includes(c.title)
-    );
-  } else {
-    filtered = careers.slice(0, 3); // fallback
-  }
+  const topCareers = scored.sort((a, b) => b.score - a.score).slice(0, 3);
 
-  res.json({ careers: filtered });
-});
-
-// GET /api/all-careers
-router.get('/all-careers', (req, res) => {
-  const rawData = fs.readFileSync(careersPath);
-  const allCareers = JSON.parse(rawData);
-  res.json(allCareers);
+  res.json({ careers: topCareers });
 });
 
 module.exports = router;
