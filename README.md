@@ -1,6 +1,6 @@
 # 🎯 CareerCompass
 
-**CareerCompass** is a student-focused web app that helps teens explore tech careers based on their interests. Through a short quiz, users get personalized career recommendations along with salary info, required skills, and free learning resources.
+**CareerCompass** is a free, open source student-focused web app that helps teens explore tech careers based on their interests. Through a short quiz, users get personalized career recommendations along with salary info, required skills, and free learning resources.
 
 The app aims to help students discover **commonly-confused, lesser-known, and cool roles** in tech — not just the usual ones — so they can find the best fit for cool personality and unique passions.
 
