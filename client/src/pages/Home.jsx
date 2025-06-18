@@ -1,4 +1,4 @@
-import '/Users/melina/Documents/SideProjects/CareerCompass/client/src/background.css';
+import '../background.css';
 
 const orange = '#FF6E00';
 
