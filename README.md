@@ -1,7 +1,5 @@
 # 🎯 CareerCompass
 
-# 🎯 CareerCompass
-
 **CareerCompass** is a student-focused web app that helps teens explore tech careers based on their interests. Through a short quiz, users get personalized career recommendations along with salary info, required skills, and free learning resources.
 
 The app aims to help students discover **commonly-confused, lesser-known, and cool roles** in tech — not just the usual ones — so they can find the best fit for cool personality and unique passions.
@@ -28,31 +26,26 @@ The app aims to help students discover **commonly-confused, lesser-known, and co
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/YOUR_USERNAME/career-compass.git
 cd career-compass
 
 ### 2. Install dependencies:
 
-```bash
 cd server
 npm install
 
 AND
 
-```bash
 cd ../client
 npm install
 
 ### 3. Start the servers:
 
-```bash
 cd server
 node index.js
 
 AND
 
-```bash
 cd ../client
 npm run dev
 
