@@ -1,12 +1,59 @@
-# React + Vite
+# 🎯 CareerCompass
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🎯 CareerCompass
 
-Currently, two official plugins are available:
+**CareerCompass** is a student-focused web app that helps teens explore tech careers based on their interests. Through a short quiz, users get personalized career recommendations along with salary info, required skills, and free learning resources.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app aims to help students discover **commonly-confused, lesser-known, and cool roles** in tech — not just the usual ones — so they can find the best fit for cool personality and unique passions.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌟 Features
+
+- 🧠 **Personalized Tech Quiz** — Answer 4 quick questions to get matched with tech roles.
+- 💼 **Career Explorer** — Browse detailed profiles of popular tech careers.
+- 📚 **Free Learning Resources** — Access curated courses and guides to start learning.
+
+---
+
+## 🚀 Stack
+
+- **Frontend**: React + Vite
+- **Backend**: Node.js + Express
+- **Matching**: Tag-based logic
+
+---
+
+## 🧪 How to Run Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/career-compass.git
+cd career-compass
+
+### 2. Install dependencies:
+
+```bash
+cd server
+npm install
+
+AND
+
+```bash
+cd ../client
+npm install
+
+### 3. Start the servers:
+
+```bash
+cd server
+node index.js
+
+AND
+
+```bash
+cd ../client
+npm run dev
+
+Then visit: http://localhost:5173

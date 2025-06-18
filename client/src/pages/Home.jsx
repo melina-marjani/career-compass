@@ -45,31 +45,32 @@ function Home() {
     <div style={wrapperStyle}>
       {/* Welcome box */}
       <div style={sectionBox}>
-        <h1 style={headingStyle}>Welcome to CareerCompass</h1>
+        <h1 style={headingStyle}>Welcome to CareerCompass!</h1>
         <p style={{ fontSize: '1.2rem', marginTop: '1rem' }}>
-          Your guide to exploring exciting tech careers — built just for students.
+          Your guide to exploring cool tech careers.
+          <br></br>Truly, are data science and data engineering the same thing?!
         </p>
       </div>
 
       {/* Feature cards */}
       <div style={{ ...sectionBox, display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
         <FeatureCard
-          title="🎯 Personalized Quiz"
+          title="Personalized Quiz"
           description="Answer a few quick questions and get career suggestions tailored to your interests."
         />
         <FeatureCard
-          title="💼 Career Explorer"
-          description="Browse high-demand tech roles like Data Scientist, UX Designer, or AI Engineer."
+          title="Career Explorer"
+          description="Understand the differences between commonly-cofused tech careers."
         />
         <FeatureCard
-          title="📚 Learn & Plan"
-          description="Get free resources, salary info, and skills for every role. Map your learning path."
+          title="Learn & Plan"
+          description="Get free resources, salary info, and skills for every role."
         />
       </div>
 
       {/* Quote box */}
       <div style={sectionBox}>
-        <blockquote style={{ fontStyle: 'italic', color: '#555', margin: 0 }}>
+        <blockquote style={{ fontStyle: 'italic', color: '#556', margin: 0 }}>
           "The best way to predict the future is to create it." – Abraham Lincoln
         </blockquote>
       </div>
