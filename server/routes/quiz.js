@@ -6,7 +6,7 @@ const careers = [
     title: 'Data Scientist',
     traits: ['data', 'analyze', 'producing', 'changing'],
     description: 'Analyzes large datasets to extract insights.',
-    simpleDescription: 'A Data Scientist studies big sets of information to find patterns and answers. They help people make smart decisions by understanding what the numbers say.',
+    simpleDescription: 'A Data Scientist studies big sets of information to find patterns and answers. They help people and companies make smart decisions by understanding what the numbers say.',
     skills: ['Python', 'Statistics', 'Machine Learning'],
     averageSalary: '$120,000',
     resources: [
@@ -28,7 +28,7 @@ const careers = [
     title: 'Product Manager',
     traits: ['no-data', 'analyze', 'managing', 'constant'],
     description: 'Leads product strategy and coordinates teams.',
-    simpleDescription: 'A Product Manager helps decide what kind of apps or tools should be made. They talk to different teams and make sure everything runs smoothly.',
+    simpleDescription: 'A Product Manager helps decide what kind of apps or tools should be made and how. They talk to different teams and make sure everything runs smoothly.',
     skills: ['Agile', 'Communication', 'Planning'],
     averageSalary: '$110,000',
     resources: [
@@ -39,7 +39,7 @@ const careers = [
     title: 'Frontend Developer',
     traits: ['no-data', 'build', 'producing', 'constant'],
     description: 'Creates interactive user interfaces.',
-    simpleDescription: 'A Frontend Developer designs what you see on websites and apps. They make sure everything looks nice and is easy to use.',
+    simpleDescription: 'A Frontend Developer designs what you see on websites and apps. They make sure everything looks nice and is easy to use. They deal with shapes and colors.',
     skills: ['HTML', 'CSS', 'JavaScript', 'React'],
     averageSalary: '$100,000',
     resources: [
@@ -72,7 +72,7 @@ const careers = [
     title: 'UX Designer',
     traits: ['no-data', 'analyze', 'producing', 'constant'],
     description: 'Designs user-friendly digital interfaces.',
-    simpleDescription: "A UX Designer makes websites and apps easier and more fun to use. They focus on how things look and feel so people don’t get confused or frustrated.",
+    simpleDescription: "A UX Designer makes websites and apps easier and more fun to use. They focus on how things should look and feel so people don’t get confused or frustrated.",
     skills: ['Figma', 'Research', 'Accessibility'],
     averageSalary: '$95,000',
     resources: [
@@ -83,7 +83,7 @@ const careers = [
     title: 'DevOps Engineer',
     traits: ['no-data', 'build', 'managing', 'changing'],
     description: 'Automates deployments and system monitoring.',
-    simpleDescription: "A DevOps Engineer helps make sure apps run smoothly by setting up systems that can update and fix themselves. They connect the people who build apps with the ones who run them.",
+    simpleDescription: "A DevOps Engineer helps make sure apps run smoothly by setting up systems that can update and fix themselves. They automate the maintaining of built apps.",
     skills: ['Docker', 'Kubernetes', 'CI/CD'],
     averageSalary: '$120,000',
     resources: [

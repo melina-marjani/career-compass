@@ -34,7 +34,7 @@ function Careers() {
 
       {filteredCareers.map((career, i) => (
         <div key={i} style={careerBox}>
-          <h2>{career.title}</h2>
+          <h2><b>{career.title}</b></h2>
           <p>
             <strong style={{ color: '#FF6E00' }}>Super Simple Description: </strong>
             {career.simpleDescription}

@@ -39,7 +39,7 @@ function Quiz() {
           <div style={careerGrid}>
             {careers.map((career, i) => (
               <div key={i} style={careerBox}>
-                <h3 style={{ marginTop: 0 }}>{career.title}</h3>
+                <h3 style={{ marginTop: 0 }}><b>{career.title}</b></h3>
             <p>
               <strong style={{ color: '#FF6E00' }}>Super Simple Description: </strong>
               {career.simpleDescription}
