@@ -40,9 +40,20 @@ function Quiz() {
             {careers.map((career, i) => (
               <div key={i} style={careerBox}>
                 <h3 style={{ marginTop: 0 }}>{career.title}</h3>
-                <p>{career.description}</p>
-                <p><strong>Skills:</strong> {career.skills.join(', ')}</p>
-                <p><strong>Average Salary:</strong> {career.averageSalary}</p>
+            <p>
+              <strong style={{ color: '#FF6E00' }}>Super Simple Description: </strong>
+              {career.simpleDescription}
+            </p>
+            <p>
+              <strong style={{ color: '#FF6E00' }}>Super Quick Description: </strong>
+              {career.description}
+            </p>
+            <p>
+              <strong style={{ color: '#FF6E00' }}>Skills:</strong> {career.skills.join(', ')}
+            </p>
+            <p>
+              <strong style={{ color: '#FF6E00' }}>Average Salary:</strong> {career.averageSalary}
+            </p>
                 <ul>
                   {career.resources.map((res, j) => (
                     <li key={j}>
